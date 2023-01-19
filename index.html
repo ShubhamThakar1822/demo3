@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <form method="post">
+            <tr>
+                <td><label for="Name">Name</label></td>
+                <td><input type="text" name="Name" id="Name" value="Shubham" readonly></td>
+            </tr>
+            <tr>
+                <td><label for="dt">Date of Birth</label></td>
+                <td><input type="date" name="dt" id="dt" min="2000-01-01" max="2010-01-01"></td>
+            </tr>
+            <tr>
+                <td><label for="ag">Age</label></td>
+                <td><input type="number" name="ag" id="ag" min="12" max="22"></td>
+            </tr>
+            <tr>
+                <td><label for="mob">Mobile No.</label></td>
+                <td><input type="text" name="mob" id="mob" size="12" pattern="[7-9][0-9]{9}"></td>
+            </tr>
+
+            <tr>
+                <td><label for="addr">Address</label></td>
+                <td><textarea name="addr" id="addr" cols="30" rows="5"></textarea></td>
+            </tr>
+
+            <tr>
+                <td><label for="gen">Gender </label></td>
+                <td>
+                <input type="radio" name="gen" id="gen" value="Male"><label for="gen">Male</label>
+                <input type="radio" name="gen" id="gen" value="Female"><label for="gen">Female</label>
+                </td>
+
+            </tr>
+
+            <tr>
+                <td><label for="deg">Degree </label></td>
+                <td>
+                <input type="checkbox" name="deg" id="deg" value="BE"><label for="deg">BE</label>
+                <input type="checkbox" name="deg" id="deg" value="BTech"><label for="deg">BTech</label>
+                <input type="checkbox" name="deg" id="deg" value="MBA"><label for="deg">MBA</label>
+                <input type="checkbox" name="deg" id="deg" value="MCA"><label for="deg">MCA</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="ho">Hobbies </label></td>
+                <td>
+                <input type="checkbox" name="ho" id="ho" value="Cycling"><label for="ho">Cycling</label>
+                <input type="checkbox" name="ho" id="ho" value="Reading"><label for="ho">Reading</label>
+                <input type="checkbox" name="ho" id="ho" value="Singing"><label for="ho">Singing</label>
+                <input type="checkbox" name="ho" id="ho" value="Swimming"><label for="ho">Swimming</label>
+            </td>
+            </tr><br><br>
+
+           <tr>
+            <td><label for="city">City</label></td>
+               <td>
+                <select name="city" id="city">
+                    <option value="1">Select City</option>
+                    <option value="pune">Pune</option>
+                    <option value="mumbai">Mumbai</option>
+                    <option value="nashik">Nashik</option>
+                    <option value="Kolhapur">Kolhapur</option>
+                </select>
+               </td>
+           </tr> <br><br><br>
+
+           <tr>
+            <td><input type="button" name="btn" id="btn" value="Register User"></td>
+            <td><input type="reset" name="btn" id="btn" value="Clear"></td>
+           </tr>
+        </form>
+    </table>
+    
+</body>
+</html>
